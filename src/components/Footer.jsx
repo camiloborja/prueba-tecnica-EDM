@@ -31,7 +31,7 @@ const Footer = () => {
         <a href="#"><i className='bx bxl-facebook'></i></a>
       </div>
 
-      
+
     </div>
   )
 }

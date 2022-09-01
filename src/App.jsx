@@ -16,7 +16,7 @@ function App() {
       <Form />
       <Footer />
       <footer className='copyright'>
-      <p className='footer__text'>PUFI Copyright 2017 - Todos los derechos reservados</p>
+        <p className='footer__text'>PUFI Copyright 2017 - Todos los derechos reservados</p>
       </footer>
     </div>
   )
