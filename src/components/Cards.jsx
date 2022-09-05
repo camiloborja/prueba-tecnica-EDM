@@ -9,7 +9,7 @@ const Cards = () => {
       </div>
       <div className="card info card2" id='pufi_rain'>
         <div className='card__img__box'>
-          <img src="imagen0.png" alt="" />
+          <img src="umbrellaLogo.png" alt="" />
         </div>
         <hr />
         <h2>Pufi RAIN</h2>
@@ -18,7 +18,7 @@ const Cards = () => {
       </div>
       <div className="card info card3" id='pufi_puff'>
         <div className='card__img__box'>
-          <img src="imagen0.png" alt="" />
+          <img src="puff verde.png" alt="" />
         </div>
         <hr />
         <h2>Pufi PUFF</h2>
@@ -44,7 +44,7 @@ const Cards = () => {
       </div>
       <div className="card info card7" id='pufi_nap'>
         <div className='card__img__box'>
-          <img src="imagen0.png" alt="" />
+          <img src="pillowLogo.webp" alt="" />
         </div>
         <hr />
         <h2>Pufi NAP</h2>

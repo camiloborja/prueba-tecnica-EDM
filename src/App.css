@@ -6,7 +6,7 @@
 }
 
 :root {
-  --font__tittle: clamp(14px, 8vw, 70px);
+  --font__tittle: clamp(14px, 5vw, 70px);
   --color__white: white;
   --color__light__gray: #fff;
 }
@@ -21,7 +21,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 25px;
   height: 100vh;
   margin: 0;
 }
@@ -67,7 +66,10 @@
   font-size: 16px;
   padding: 1.5rem;
   text-decoration: none;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.responsive__header{
+  display: none;
 }
 
 .header__btn i {
@@ -75,7 +77,8 @@
 }
 
 .header__btn:hover {
-  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 0px 2px white;
+  transform: scale(0.95);
 }
 
 .header__bar__acount {
@@ -102,7 +105,7 @@
 
 .shop__btn {
   background: none;
-  border: 1px solid white;
+  border: 3px solid white;
   color: white;
   padding: 10px 30px;
   transition: all 0.5s ease-in-out;
@@ -230,7 +233,7 @@
   justify-content: center;
   align-items: center;
   border: 1px solid gray;
-  width: 400px;
+  width: 600px;
 }
 
 .input__email button {
@@ -339,12 +342,68 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header__bar{
+    display: none;
+  }
+  .header{
+    justify-content: space-around;
+  }
+  .header__text{
+    margin: 20vh 0 0;
+  }
+  .btn__menu {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    transition: button 0.3s ease-in-out;
+    z-index: 3;
+  }
+  
+  .responsive__header{
+    display: flex;
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+    gap: 10px;
+  }
+  .header__bar__icons{
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 20vw;
+    min-height: 100vh;
+    padding: 30px 0px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .active{
+    display: flex;
+  }
+  .header__btn{
+    font-size: 12px;
+  }
+  .header__bar__acount{
+    flex-direction: column;
+  }
+  .acount__btn{
+    text-align: left;
+  }
   .cards {
     grid-template-columns: auto;
   }
 
   .card {
-    height: 30vh;
+    height: 50vh;
   }
 
   .instagram__box {
@@ -428,6 +487,13 @@
     width: 100%;
     height: 100%;
   }
+  .input__email {
+    width: 400px;
+  }
+  .footer{
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -443,7 +509,7 @@
 
   .header {
     gap: 5px;
-    padding: 5px;
+    padding: 25px;
   }
 
   .header__btn {
@@ -455,10 +521,12 @@
     font-size: 6px;
     padding: 1rem 2rem;
   }
-
+  .card{
+    gap: 0px;
+  }
   .card__img__box {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 70px;
+    max-height: 70px;
   }
 
   .card__img__box img {
@@ -469,6 +537,9 @@
   .footer__img img {
     max-height: 30px;
     max-width: 30px;
+  }
+  .input__email {
+    width: 200px;
   }
 
 }

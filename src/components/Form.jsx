@@ -8,11 +8,13 @@ const Form = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    setInput(e.target.email.value)
-    if (input.length % 2 == 0) {
-      setPair('Numero par')
-    } else {
-      setPair('Numero Impar')
+    if (e.target.email.value != 0) {
+      setInput(e.target.email.value)
+      if (input.length % 2 == 0) {
+        setPair('Numero par')
+      } else {
+        setPair('Numero Impar')
+      }
     }
   }
 
