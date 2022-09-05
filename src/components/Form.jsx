@@ -26,8 +26,8 @@ const Form = () => {
       <form className='input__email' onSubmit={handleSubmit} >
         <input name='email' type="email" placeholder='Ingresa tu email' />
         <button><i className='bx bx-right-arrow-alt'></i></button>
-        <span className='pair'>{pair}</span>
       </form>
+      <span className='pair'>{pair}</span>
     </div>
   )
 }
