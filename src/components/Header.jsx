@@ -9,13 +9,13 @@ const Header = () => {
           <img src="logo.png" alt="" />
         </div>
         <nav className="header__bar__icons">
-          <a className='header__btn' href='#pufi_rain'>PUFI RAIN</a>
+          <a className='header__btn' href='#pufi_rain'><i className='bx bx-cloud-light-rain'></i><span>PUFI RAIN</span></a>
           <hr />
-          <a className='header__btn' href='#pufi_puff'>PUFI PUFF</a>
+          <a className='header__btn' href='#pufi_puff'><i className='bx bx-bed'></i><span>PUFI PUFF</span></a>
           <hr />
-          <a className='header__btn' href='#pufi_cart'>PUFI CART</a>
+          <a className='header__btn' href='#pufi_cart'><i className='bx bx-shopping-bag'></i><span>PUFI CART</span></a>
           <hr />
-          <a className='header__btn' href='#pufi_nap'>PUFI NAP</a>
+          <a className='header__btn' href='#pufi_nap'><i class='bx bx-briefcase-alt-2'></i><span>PUFI NAP</span></a>
           <hr />
         </nav>
         <div className="header__bar__acount">

@@ -27,7 +27,7 @@ const Cards = () => {
       </div>
       <div className="card shop card4">
         <button className='shop__btn__card'>SHOP</button>
-        <img src="/puff.png" alt="Imagen no disponible" />
+        <img src="/puff.webp" alt="Imagen no disponible" />
       </div>
       <div className="card shop card5">
         <button className='shop__btn__card'>SHOP</button>

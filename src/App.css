@@ -2,6 +2,7 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -60,11 +61,16 @@
 .header__btn {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 5px;
   color: var(--color__white);
-  font-size: 18px;
+  font-size: 16px;
   padding: 1.5rem;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
+}
+.header__btn i{
+  font-size: 1.5rem;
 }
 
 .header__btn:hover {
@@ -215,7 +221,20 @@
   flex-direction: column;
   gap: 10px;
 }
+.input__email{
+  display: flex;
+  flex-direction: row;
 
+}
+.input__email button{
+  border: none;
+  background: none;
+}
+.input__email input{
+  border: none;
+  background: none;
+  padding: 10px;
+}
 .footer {
   display: flex;
   flex-direction: row;
@@ -252,7 +271,28 @@
 .footer__btn:hover {
   text-shadow: 0px 0px black;
 }
-
+.footer__safe{
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  gap: 10px;
+}
+.footer__safe__icons{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.footer__safe p{
+  font-size: 12px;
+ font-weight: bold;
+}
+.footer__safe i{
+  font-size: 3rem;
+}
+.footer__safe span{
+  font-size: 10px;
+  text-align: start;
+}
 .footer__social {
   display: flex;
   text-decoration: none;
@@ -317,16 +357,41 @@
   }
 
   .cards {
+    grid-template-columns: auto;
     grid-template-areas:
-      'card7'
-      'card2'
-      'card3'
-      'card5'
-      'card5'
-      'card6'
-      'card8'
-      'card1'
+    "card1"
+    "card2"
+    "card4"
+    "card3"
+    "card5"
+    "card6"
+    "card8"
+    "card7"
     ;
+  }
+  .card1{
+    grid-area: card1;
+  }
+  .card2{
+    grid-area: card2;
+  }
+  .card3{
+    grid-area: card3;
+  }
+  .card4{
+    grid-area: card4;
+  }
+  .card5{
+    grid-area: card5;
+  }
+  .card6{
+    grid-area: card6;
+  }
+  .card7{
+    grid-area: card7;
+  }
+  .card8{
+    grid-area: card8;
   }
 
   .card__img__box {

@@ -21,7 +21,13 @@ const Footer = () => {
         <a className='footer__btn' href='#pufi_nap'>TERMINOS {'&'} CONDICIONES</a>
       </nav>
       <hr />
-      <div>
+      <div className='footer__safe'>
+        <p>Compra 100% Segura</p>
+        <div className='footer__safe__icons'>
+        <i className='bx bx-qr' ></i>
+        <i className='bx bx-shield-quarter'></i>
+        <span>COMPRA CON LA GARANTIA DE PUFFI</span>
+        </div>
       </div>
       <hr />
       <div className='footer__social'>
